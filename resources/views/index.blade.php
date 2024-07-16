@@ -12,7 +12,7 @@
     <div class="d-flex justify-content-between align-items-center mb-3">
     <h1>Users</h1>
     <div class="container mt-5">
-        <!-- Any content related to the container -->
+     
     </div>
     <div>
         <a href="{{ route('users.create') }}" class="btn btn-primary">Create User</a>
