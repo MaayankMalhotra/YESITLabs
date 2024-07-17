@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AudioController;
-
+use App\Http\Controllers\CRUDController;
 use App\Http\Controllers\DistanceController;
 
 
@@ -15,3 +15,5 @@ Route::get('users_export', [UserController::class, 'export'])->name('users_expor
 Route::post('/upload/audio', [AudioController::class, 'uploadAudio'])->name('upload.audio');
 
 Route::get('/distance', [DistanceController::class, 'index'])->name('distance');
+
+Route::get('/testing',[CRUDController::class,'index'])->name('testing');
